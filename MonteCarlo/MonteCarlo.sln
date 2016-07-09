@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleThreadMonteCarlo", "SingleThreadMonteCarlo\SingleThreadMonteCarlo.csproj", "{4740BE21-836F-4E01-8E38-DDC2B1C60251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeparateThreadMonteCarlo", "SeparateThreadMonteCarlo\SeparateThreadMonteCarlo.csproj", "{558DF028-FEDF-4CF5-B5CA-7883CCAB326B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4740BE21-836F-4E01-8E38-DDC2B1C60251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4740BE21-836F-4E01-8E38-DDC2B1C60251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4740BE21-836F-4E01-8E38-DDC2B1C60251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4740BE21-836F-4E01-8E38-DDC2B1C60251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558DF028-FEDF-4CF5-B5CA-7883CCAB326B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558DF028-FEDF-4CF5-B5CA-7883CCAB326B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558DF028-FEDF-4CF5-B5CA-7883CCAB326B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558DF028-FEDF-4CF5-B5CA-7883CCAB326B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
