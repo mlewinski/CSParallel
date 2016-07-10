@@ -20,7 +20,7 @@ namespace MultipleThreadsMonteCarlo
         {
             WaitCallback threadMethod = RunPiComputation;
             ThreadPool.SetMaxThreads(30, 100);
-            for (int i = 0; i < ThreadCount; i++)
+            for(int i = 0; i < ThreadCount; i++)
             {
                 ewht[i] = new EventWaitHandle(false, EventResetMode.AutoReset);
                 ThreadPool.QueueUserWorkItem(threadMethod, i);
