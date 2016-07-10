@@ -1,21 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace SeparateThreadMonteCarlo
+namespace MultipleThreadsMonteCarlo
 {
     class Program
     {
         static Random r = new Random();
+        const int threadCount = 8;
         static void Main(string[] args)
         {
-            Thread t = new Thread(RunPiComputation);
-            t.Start();
-            Console.ReadLine();
-            t.Abort();
-            Console.WriteLine("Press any key");
+            Thread[] tt = new Thread[threadCount];
+            for(int i = 0; i<threadCount; i++)
+            {
+                tt[i] = new Thread(RunPiComputation);
+                tt[i].Priority = ThreadPriority.BelowNormal;
+                tt[i].Start();
+            }
             Console.ReadLine();
         }
-
         static double CalculatePi(long attemptCount)
         {
             double x, y;
@@ -34,16 +40,17 @@ namespace SeparateThreadMonteCarlo
         {
             try
             {
-                int startTime = Environment.TickCount;
-                int endTime = 0;
-                long attemptCount = 100000000L;
+                //int startTime = Environment.TickCount;
+                //int endTime = 0;
+                Random r = new Random(Program.r.Next() & DateTime.Now.Millisecond);
+                long attemptCount = 1000000000L/threadCount;
                 Console.WriteLine("RunPiComputation MTID:{0}", Thread.CurrentThread.ManagedThreadId);
 
                 double pi = CalculatePi(attemptCount);
                 Console.WriteLine("Pi = {0}, computation error = {1}", pi, Math.Abs(Math.PI - pi));
 
-                endTime = Environment.TickCount;
-                Console.WriteLine("Time elapsed : {0}", (endTime - startTime).ToString());
+                //endTime = Environment.TickCount;
+                //Console.WriteLine("Time elapsed : {0}", (endTime - startTime).ToString());
             }
             catch (ThreadAbortException)
             {
