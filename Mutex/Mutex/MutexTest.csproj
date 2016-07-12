@@ -7,8 +7,8 @@
     <ProjectGuid>{C7D7725D-35DB-47DE-9942-95C0FFBDB708}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mutex</RootNamespace>
-    <AssemblyName>Mutex</AssemblyName>
+    <RootNamespace>MutexTest</RootNamespace>
+    <AssemblyName>MutexTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

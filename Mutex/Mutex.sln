@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Mutex\Mutex.csproj", "{C7D7725D-35DB-47DE-9942-95C0FFBDB708}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest", "Mutex\MutexTest.csproj", "{C7D7725D-35DB-47DE-9942-95C0FFBDB708}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCountControl", "InstanceCountControl\InstanceCountControl.csproj", "{0F29C450-A964-4F8F-AFFB-DDFF8F62F191}"
 EndProject
