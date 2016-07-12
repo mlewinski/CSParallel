@@ -11,15 +11,15 @@ namespace ReaderWriterLockTest
     class Program
     {
         static Random r = new Random();
-        const int ElementCount = 10;
+        const int ElementCount = 1000;
         static int[] Table = new int[ElementCount];
 
-        const int WriterThreadCount = 2;
-        const int ReaderThreadCount = 10;
+        const int WriterThreadCount = 5;
+        const int ReaderThreadCount = 30;
 
         //maximum timeouts
-        const int MaxTimeBetweenReadOperations = 1000; //1s
-        const int MaxTimeBetweenWriteOperations = 10000; //10s
+        const int MaxTimeBetweenReadOperations = 2000; //2s
+        const int MaxTimeBetweenWriteOperations = 1000; //1s
         const int MaxReadOperationDuration = 1000; //1s 
         const int MaxWriteOperationDuration = 100; //0.1s
 
