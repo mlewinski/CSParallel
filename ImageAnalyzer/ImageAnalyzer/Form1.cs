@@ -30,10 +30,21 @@ namespace ImageAnalyzer
 
         private void ConfigureChart()
         {
-            chart.ChartAreas[0].AxisX.Minimum = 0;
-            chart.ChartAreas[0].AxisX.Maximum = _width;
-            chart.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            chart.Legends.Clear();
+            chartR.ChartAreas[0].AxisX.Minimum = 0;
+            chartR.ChartAreas[0].AxisX.Maximum = _width;
+            chartR.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            chartG.ChartAreas[0].AxisX.Minimum = 0;
+            chartG.ChartAreas[0].AxisX.Maximum = _width;
+            chartG.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            chartB.ChartAreas[0].AxisX.Minimum = 0;
+            chartB.ChartAreas[0].AxisX.Maximum = _width;
+            chartB.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            chartR.Legends.Clear();
+            chartG.Legends.Clear();
+            chartB.Legends.Clear();
+            chartR.Series[0].Color = Color.Red;
+            chartG.Series[0].Color = Color.Green;
+            chartB.Series[0].Color = Color.Blue;
         }
 
         private void buttonPrepare_Click(object sender, EventArgs e)
@@ -67,15 +78,21 @@ namespace ImageAnalyzer
         {
             Bitmap orgBitmap = new Bitmap(pictureBoxPreview.Image);
             const int msDelay = 50;
-            double[] lineData = new double[orgBitmap.Width];
+            double[] lineDataR = new double[orgBitmap.Width];
+            double[] lineDataG = new double[orgBitmap.Width];
+            double[] lineDataB = new double[orgBitmap.Width];
             for (int i = 0; i < pictureBoxPreview.Image.Height && _analysisActive; i++)
             {
                 Bitmap tmpBitmap = new Bitmap(orgBitmap);
                 for (int j = 0; j < pictureBoxPreview.Image.Width; j++)
                 {
-                    lineData[j] = tmpBitmap.GetPixel(j, i).R;
+                    lineDataR[j] = tmpBitmap.GetPixel(j, i).R;
+                    lineDataG[j] = tmpBitmap.GetPixel(j, i).G;
+                    lineDataB[j] = tmpBitmap.GetPixel(j, i).B;
                 }
-                ThreadSafeCalls.AddPointsToChart(chart, 0, lineData);
+                ThreadSafeCalls.AddPointsToChart(chartR, 0, lineDataR);
+                ThreadSafeCalls.AddPointsToChart(chartG, 0, lineDataG);
+                ThreadSafeCalls.AddPointsToChart(chartB, 0, lineDataB);
 
                 Graphics g = Graphics.FromImage(tmpBitmap);
                 g.DrawLine(Pens.Red,0,i,pictureBoxPreview.Image.Width,i);
