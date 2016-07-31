@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeparateThreadMonteCarlo", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleThreadsMonteCarlo", "MultipleThreadsMonteCarlo\MultipleThreadsMonteCarlo.csproj", "{DE957158-F27E-4D05-85B1-799D349368E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopMonteCarlo", "DesktopMonteCarlo\DesktopMonteCarlo.csproj", "{8E964C54-3B24-4796-BF72-51F29ADBC698}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DE957158-F27E-4D05-85B1-799D349368E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE957158-F27E-4D05-85B1-799D349368E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE957158-F27E-4D05-85B1-799D349368E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E964C54-3B24-4796-BF72-51F29ADBC698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E964C54-3B24-4796-BF72-51F29ADBC698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E964C54-3B24-4796-BF72-51F29ADBC698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E964C54-3B24-4796-BF72-51F29ADBC698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
