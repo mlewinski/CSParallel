@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace RelayRace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Task t1, t2, t11, t22;
+            Random random=new Random();
+            Action a = () =>
+            {
+                Console.WriteLine("Runner {0} started", Task.CurrentId);
+                Thread.Sleep(random.Next(5000, 12000));
+                Console.WriteLine("Runner {0} finished the run", Task.CurrentId);
+            };
+
+            Action<Task> b = (t) =>
+            {
+                Console.WriteLine("Runner {0} started after {1}",Task.CurrentId,t.Id);
+                Thread.Sleep(random.Next(5000,12500));
+            Console.WriteLine("Runner {0} finished the race", Task.CurrentId);
+            };
+            t1 = new Task(a);
+            t2=new Task(a);
+            t11 = t1.ContinueWith(b);
+            t22 = t2.ContinueWith(b);
+            t1.Start();
+            t2.Start();
+            Task.WaitAll(t1, t2, t11, t22);
+            Console.WriteLine("Race finished");
+            Console.ReadLine();
+        }
+    }
+}
