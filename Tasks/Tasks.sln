@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayRace", "..\RelayRace\R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationTokenTest", "CancellationTokenTest\CancellationTokenTest.csproj", "{1FB119EC-261E-446C-A77C-0FB50D576864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskStateObserver", "TaskStateObserver\TaskStateObserver.csproj", "{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1FB119EC-261E-446C-A77C-0FB50D576864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FB119EC-261E-446C-A77C-0FB50D576864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FB119EC-261E-446C-A77C-0FB50D576864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
