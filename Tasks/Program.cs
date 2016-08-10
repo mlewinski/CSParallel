@@ -19,10 +19,10 @@ namespace Tasks
             };
 
             List<Task> tasks = new List<Task>();
-            for(int i=0;i<100;i++) tasks.Add(new Task(a));
+            for (int i = 0; i < 100; i++) tasks.Add(new Task(a));
 
-            tasks.ForEach(t=>t.Start());
-            tasks.ForEach(t=>t.Wait());
+            tasks.ForEach(t => t.Start());
+            tasks.ForEach(t => t.Wait());
         }
     }
 }

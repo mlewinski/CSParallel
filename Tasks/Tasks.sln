@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationTokenTest", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskStateObserver", "TaskStateObserver\TaskStateObserver.csproj", "{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFactoryTest", "..\TaskFactoryTest\TaskFactoryTest.csproj", "{A1F13F31-39DC-4605-B464-1A82D5129DF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E87F8E-17F1-42C8-BCFA-E3FFE79AE052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F13F31-39DC-4605-B464-1A82D5129DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F13F31-39DC-4605-B464-1A82D5129DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F13F31-39DC-4605-B464-1A82D5129DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F13F31-39DC-4605-B464-1A82D5129DF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
