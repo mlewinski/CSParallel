@@ -32,7 +32,13 @@ namespace RelayRace
             t22 = t2.ContinueWith(b);
             t1.Start();
             t2.Start();
-            Task.WaitAll(t1, t2, t11, t22);
+            Task[] tasks = {t11, t22};
+            Task.Factory.ContinueWhenAny(tasks,
+                (t) =>
+                {
+                    Console.WriteLine("Runner {0} won the race", t.Id);
+                });
+            Task.WaitAll(tasks);
             Console.WriteLine("Race finished");
             Console.ReadLine();
         }
