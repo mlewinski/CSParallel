@@ -26,12 +26,9 @@ namespace RelayRace
                 Thread.Sleep(random.Next(5000,12500));
             Console.WriteLine("Runner {0} finished the race", Task.CurrentId);
             };
-            t1 = new Task(a);
-            t2=new Task(a);
-            t11 = t1.ContinueWith(b);
-            t22 = t2.ContinueWith(b);
-            t1.Start();
-            t2.Start();
+            t11 = (t1 = Task.Factory.StartNew(a)).ContinueWith(b);
+            t22 = (t2 = Task.Factory.StartNew(a)).ContinueWith(b);
+
             Task[] tasks = {t11, t22};
             Task.Factory.ContinueWhenAny(tasks,
                 (t) =>
