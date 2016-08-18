@@ -29,7 +29,7 @@ namespace DivisorsParallel
             List<long> divisors = new List<long>();
 
             bool prime = true;
-            Parallel.For( 2L, (long) n/2 + 1, (long i) =>
+            Parallel.For( 2L, (long) n/2, (long i) =>
             {
                 if (n % (long) i == 0)
                 {

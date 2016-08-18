@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelTest", "ParallelTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivisorsParallel", "..\PrimeTestParallel\DivisorsParallel.csproj", "{848CC2D3-8942-4D7C-B0FB-6FC613838AA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelFor", "..\ParallelFor\ParallelFor.csproj", "{620F11CC-8A7B-4702-BB2A-D8482AE78285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{848CC2D3-8942-4D7C-B0FB-6FC613838AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848CC2D3-8942-4D7C-B0FB-6FC613838AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848CC2D3-8942-4D7C-B0FB-6FC613838AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620F11CC-8A7B-4702-BB2A-D8482AE78285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620F11CC-8A7B-4702-BB2A-D8482AE78285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{620F11CC-8A7B-4702-BB2A-D8482AE78285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620F11CC-8A7B-4702-BB2A-D8482AE78285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
