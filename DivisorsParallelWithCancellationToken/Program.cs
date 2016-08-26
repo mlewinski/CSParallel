@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -21,24 +22,28 @@ namespace DivisorsParallelWithCancellationToken
             
             ParallelOptions po = new ParallelOptions();
             po.CancellationToken = token;
-
-            try
-            {
-                Parallel.For(2, (long) Math.Sqrt(n) + 1, po, (i) =>
+            bool isPrime = true;
+            //try
+            //{
+                Parallel.ForEach(Partitioner.Create(2, (long) n/2 +1), po, (partition) =>
                 {
-                    if (n%i == 0)
+                    for (long i = partition.Item1; i < partition.Item2; i++)
                     {
-                        cts.Cancel();
-                        Console.WriteLine("{0} divides {1}", i, n);
+                        if (n%i == 0)
+                        {
+                            isPrime = false;
+                            //cts.Cancel();
+                            Console.WriteLine("{0} divides {1}", i, n);
+                        }
+                        //token.ThrowIfCancellationRequested();
                     }
-                    token.ThrowIfCancellationRequested();
                 });
-                Console.WriteLine("{0} is prime number", n);
-            }
-            catch (OperationCanceledException)
-            {
-                Console.WriteLine("{0} is not prime number", n);
-            }
+                Console.WriteLine("{0} is {1} prime number", n, isPrime?"":"not");
+            //}
+            //catch (OperationCanceledException)
+            //{
+            //    Console.WriteLine("{0} is not prime number", n);
+            //}
             Console.ReadLine();
         }
     }
