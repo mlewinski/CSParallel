@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentData", "ConcurrentData\ConcurrentData.csproj", "{9B09D499-9FE0-4021-8BE1-43E612F0602A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockingCollectionTest", "BlockingCollectionTest\BlockingCollectionTest.csproj", "{C3540502-DA4B-4559-AD4A-BA49581E10F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9B09D499-9FE0-4021-8BE1-43E612F0602A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B09D499-9FE0-4021-8BE1-43E612F0602A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B09D499-9FE0-4021-8BE1-43E612F0602A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
