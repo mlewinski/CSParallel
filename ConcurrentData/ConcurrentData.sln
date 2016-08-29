@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentData", "Concurren
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockingCollectionTest", "BlockingCollectionTest\BlockingCollectionTest.csproj", "{C3540502-DA4B-4559-AD4A-BA49581E10F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelAggregate", "ParallelAggregate\ParallelAggregate.csproj", "{B0FB0F52-64BE-4101-9E4C-8A1B2EB614B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3540502-DA4B-4559-AD4A-BA49581E10F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FB0F52-64BE-4101-9E4C-8A1B2EB614B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FB0F52-64BE-4101-9E4C-8A1B2EB614B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FB0F52-64BE-4101-9E4C-8A1B2EB614B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FB0F52-64BE-4101-9E4C-8A1B2EB614B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
