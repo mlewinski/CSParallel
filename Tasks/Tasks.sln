@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Tasks.csproj", "{9CB4FCB5-0DDA-4FF4-8EFA-0D6F55AC5441}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFactoryTest", "..\TaskFactoryTest\TaskFactoryTest.csproj", "{A1F13F31-39DC-4605-B464-1A82D5129DF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskSchedulerTest", "TaskScheduler\TaskSchedulerTest.csproj", "{36E4AFDB-260F-4503-A79D-4CC9121E120B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UISynchronization", "..\UISynchronization\UISynchronization.csproj", "{ADDD7BAB-4316-452E-B0EE-BC602DCB4553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{36E4AFDB-260F-4503-A79D-4CC9121E120B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E4AFDB-260F-4503-A79D-4CC9121E120B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36E4AFDB-260F-4503-A79D-4CC9121E120B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDD7BAB-4316-452E-B0EE-BC602DCB4553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDD7BAB-4316-452E-B0EE-BC602DCB4553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDD7BAB-4316-452E-B0EE-BC602DCB4553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDD7BAB-4316-452E-B0EE-BC602DCB4553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
